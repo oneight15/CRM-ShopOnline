@@ -7,6 +7,41 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <section id="goods">
+        <h2>Добавить товар</h2>
+        <form action="https://jsonplaceholder.typicode.com/posts" method="post">
+            <fieldset>
+                <label for="name">Наименование</label>
+                <br>
+                <input type="text" name="name" id="name">
+                <br>
+                <label for="category">Категория</label>
+                <br>
+                <input type="text" name="category" id="category">
+                <br>
+                <label for="units">Единицы измерения</label>
+                <br>
+                <input type="text" name="units" id="units">
+                <br>
+                <label for="discount">Дисконт</label>
+                <input type="checkbox" name="discount" id="discount"><input type="text" disabled>
+                <br>
+                <label for="description">Описание</label>
+                <br>
+                <textarea name="description" id="description" cols="20" rows="3"></textarea>
+                <br>
+                <label for="count">Количество</label>
+                <br>
+                <input type="number" name="count" id="count">
+                <br>
+                <label for="price">Цена</label>
+                <br>
+                <input type="text" name="price" id="price">
+                <br>
+                <input type="file" name="image" id="image">
+            </fieldset>
+            <button type="submit">Добавить товар</button>
+        </form>
+    </section>
 </body>
 </html>
