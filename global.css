@@ -1,0 +1,43 @@
+html {
+  position: relative;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: Inter;
+}
+
+button {
+  padding: 0;
+  cursor: pointer;
+}
+
+button,
+input,
+textarea {
+  border: none;
+  background-color: transparent;
+}
+
+h1,
+h2,
+h3,
+p,
+figure,
+fieldset {
+  margin: 0;
+}
+
+.container {
+  max-width: 580px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
