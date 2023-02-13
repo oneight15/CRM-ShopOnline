@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,58 +7,58 @@
   <title>Document</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <section class="section" id="goods">
     <div class="container">
       <h2 class="section__title">Добавить товар</h2>
       <form class="form" action="https://jsonplaceholder.typicode.com/posts" method="post">
-        <fieldset class="fieldset">
+        <fieldset class="form__fieldset">
 
-          <div class="field">
-            <label class="field__label" for="name">Наименование</label>
-            <input class="field__input" type="text" name="name" id="name" required>
+          <div class="form__field">
+            <label class="form__label" for="name">Наименование</label>
+            <input class="form__input" type="text" name="name" id="name" required>
           </div>
 
-          <div class="field">
-            <label class="field__label" for="category">Категория</label>
-            <input class="field__input" type="text" name="category" id="category" required>
+          <div class="form__field">
+            <label class="form__label" for="category">Категория</label>
+            <input class="form__input" type="text" name="category" id="category" required>
           </div>
 
-          <div class="field">
-            <label class="field__label" for="units">Единицы измерения</label>          
-            <input class="field__input" type="text" name="units" id="units" required>
+          <div class="form__field">
+            <label class="form__label" for="units">Единицы измерения</label>          
+            <input class="form__input" type="text" name="units" id="units" required>
           </div>
 
-          <div class="field">
-            <label class="field__label" for="discount">Дисконт</label>
+          <div class="form__field">
+            <label class="form__label" for="discount">Дисконт</label>
             <div>
-              <input class="field__input_checkbox" type="checkbox" aria-label="Применить скидку">
-              <input class="field__input field__input_disabled" type="text" name="discount" id="discount" disabled>
+              <input class="form__input_checkbox" type="checkbox" aria-label="Применить скидку">
+              <input class="form__input form__input_disabled" type="text" name="discount" id="discount" disabled>
             </div>
           </div>
 
-          <div class="field">
-            <label class="field__label" for="description">Описание</label>
-            <textarea class="field__input field__input_textar" name="description" id="description" cols="20" rows="3" required></textarea>
+          <div class="form__field">
+            <label class="form__label" for="description">Описание</label>
+            <textarea class="form__input form__input_textar" name="description" id="description" rows="3" required></textarea>
           </div>
 
-          <div class="field">
-            <label class="field__label" for="count">Количество</label>
-            <input class="field__input" type="number" name="count" id="count" required>
+          <div class="form__field">
+            <label class="form__label" for="count">Количество</label>
+            <input class="form__input" type="number" name="count" id="count" required>
           </div>
           
 
-          <div class="field">
-            <label class="field__label" for="price">Цена</label>
-            <input class="field__input" type="text" name="price" id="price" required>
+          <div class="form__field">
+            <label class="form__label" for="price">Цена</label>
+            <input class="form__input" type="text" name="price" id="price" required>
           </div>
 
 
         </fieldset>
-        <button type="submit">Добавить товар</button>
+        <button class="form__btn" type="submit">Добавить товар</button>
       </form>
     </div>
   </section>
